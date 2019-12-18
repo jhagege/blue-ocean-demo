@@ -14,8 +14,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        tool 'gradle4'
-        sh 'gradle build'
+        sh '${tool \'gradle4\'}/bin/gradle build'
       }
     }
 
